@@ -1,0 +1,145 @@
+/* CENTER VERTICALLY AND HORIZONTALLY */
+/* CENTER VERTICALLY */
+/* BACKGROUNDS */
+/* MEDIA QUERIES (ADD IF MORE ARE NEEDED) */
+/* ARROWS */
+/* CHEVRONS */
+/* CLEARFIX MIXIN */
+.navigation::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/** FONTS **/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  position: relative;
+}
+
+.navigation .mobile-logo {
+  width: 10rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+}
+
+.navigation .menu {
+  width: 3.2rem;
+  height: 2.7rem;
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.navigation .menu.open span:first-of-type,
+.navigation .menu.open span:last-of-type {
+  top: 1.2rem;
+  width: 0;
+  left: 50%;
+}
+
+.navigation .menu.open span:nth-of-type(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navigation .menu.open span:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navigation .menu span {
+  display: block;
+  position: absolute;
+  height: 0.3rem;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.navigation .menu span:first-of-type {
+  top: 0;
+}
+
+.navigation .menu span:nth-of-type(2), .navigation .menu span:nth-of-type(3) {
+  top: 1.1rem;
+}
+
+.navigation .menu span:nth-of-type(4) {
+  top: 2.2rem;
+}
+
+.navigation .desktop-layout {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

@@ -102,12 +102,9 @@
 
 /* CLEARFIX MIXIN */
 %clearfix {
-	&:before,
-	&:after {
+	&::after {
 		content: " ";
 		display: table;
-	}
-	&:after {
 		clear: both;
 	}
 }
