@@ -1,0 +1,36 @@
+#homebody {
+	.black-button {
+		margin-top: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.upcoming-events {
+		padding-left: 0;
+		padding-right: 0;
+
+		.event-separator {
+			width: calc(100% - 3rem);
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.services-overview,
+	.price-overview {
+		> p {
+			margin-bottom: 4rem;
+		}
+
+		.icon-feature {
+			&:not(:first-of-type) {
+				margin-top: 5rem;
+			}
+		}
+	}
+
+	.services-overview {
+		background-color: black;
+		color: white;
+	}
+}

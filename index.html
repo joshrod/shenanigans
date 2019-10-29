@@ -7,11 +7,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Shenanigans E-Sports Arena | San Antonio, TX</title>
 	<link rel="stylesheet" href="scss/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Galada|Open+Sans:400,600,700&display=swap"
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans:400,600,700|Playball&display=swap"
 		rel="stylesheet">
+
 </head>
 
-<body>
+<body id="homebody">
 	<nav class="navigation">
 		<a class="mobile-logo" href="javascript:void(0)">
 			<img src="img/logo-wht.svg" alt="White Shenanigans Logo" />
@@ -30,10 +31,10 @@
 			<a href="javascript:void(0)">Contact</a>
 		</div>
 	</nav>
-	<div class="hero">
+	<div class="hero-slider">
 		<div class="overlay"></div>
 	</div>
-	<section class="overview">
+	<section class="snippet">
 		<h1 class="tagline">Where the Gaming Elite Compete</h1>
 		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima repellat rem dolorem nam assumenda! Qui
 			velit doloribus in tempore ipsum numquam quisquam labore voluptate non aspernatur modi dolorum, voluptatum
@@ -44,10 +45,32 @@
 	<section class="upcoming-events">
 		<h1 class="heading">Upcoming Events</h1>
 		<div class="event">
-			<div class="event-bg"></div>
+			<div class="outer-bg">
+				<div class="inner-bg"></div>
+			</div>
 			<div class="event-info">
 				<div class="date-box">
-					<p class="date">Nov <span class="day">1</span></p>
+					<p class="date">Nov<br class="day-break"><span class="day">1</span></p>
+				</div>
+				<div class="info">
+					<h3 class="title">Fortnite Tournament</h3>
+					<p class="cost">$15 entry @ 8:00pm</p>
+				</div>
+			</div>
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptates animi at necessitatibus
+					inventore autem fugit sunt recusandae. Voluptas unde perferendis, sed quidem quibusdam quas
+					consequatur commodi voluptate officia laudantium?</p>
+			</div>
+		</div>
+		<hr class="event-separator">
+		<div class="event">
+			<div class="outer-bg">
+				<div class="inner-bg"></div>
+			</div>
+			<div class="event-info">
+				<div class="date-box">
+					<p class="date">Feb<br class="day-break"><span class="day">28</span></p>
 				</div>
 				<div class="info">
 					<h3 class="title">Fortnite Tournament</h3>
@@ -63,37 +86,44 @@
 		<a href="javascript:void(0);" class="black-button">More Events</a>
 	</section>
 	<section class="services-overview">
-		<h1 class="heading">Service</h1>
+		<h1 class="heading">Services</h1>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repellendus possimus illum eligendi
 			eveniet cupiditate doloremque nam, inventore a aliquid odio non ullam praesentium. Voluptatibus deserunt
 			odit accusantium itaque perspiciatis!</p>
-		<div class="service">
-			<div class="service-icon">
-				<img src="img/Mortal_Kombat_11_cover_art.png" alt="Laptop Icon">
+		<div class="service icon-feature">
+			<div class="icon">
+				<img src="img/casual-icon.svg" alt="Laptop Icon">
 			</div>
 			<h3>Casual Gaming</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel id soluta ab sequi, tempore
-				exercitationem eos modi rem natus iusto officia molestiae fugiat possimus mollitia repellendus,
-				repellat, quod perferendis.</p>
+				exercitationem eos modi rem natus iusto officia.</p>
 		</div>
-		<div class="service">
-			<div class="service-icon">
-				<img src="img/Mortal_Kombat_11_cover_art.png" alt="Laptop Icon">
+		<div class="service icon-feature">
+			<div class="icon">
+				<img src="img/tournament-icon.svg" alt="Bracket Icon">
 			</div>
-			<h3>Casual Gaming</h3>
+			<h3>Tournaments</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel id soluta ab sequi, tempore
-				exercitationem eos modi rem natus iusto officia molestiae fugiat possimus mollitia repellendus,
-				repellat, quod perferendis.
+				exercitationem eos modi rem natus iusto officia molestiae.
+			</p>
+		</div>
+		<div class="service icon-feature">
+			<div class="icon">
+				<img src="img/party-icon.svg" alt="Party Hat Icon">
+			</div>
+			<h3>Parties</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel id soluta ab sequi, tempore
+				exercitationem eos modi rem natus iusto officia molestiae.
 			</p>
 		</div>
 	</section>
 	<section class="price-overview">
-		<h1 class="heading">Service</h1>
+		<h1 class="heading">Pricing</h1>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, repellendus possimus illum eligendi
 			eveniet cupiditate doloremque nam, inventore a aliquid odio non ullam praesentium. Voluptatibus deserunt
 			odit accusantium itaque perspiciatis!</p>
-		<div class="price-level">
-			<div class="price-icon">
+		<div class="price-level icon-feature">
+			<div class="icon">
 				<img src="img/sword.png" alt="Sword Icon">
 			</div>
 			<h3>Normal Mode</h3>
@@ -101,8 +131,8 @@
 				exercitationem eos modi rem natus iusto officia molestiae fugiat possimus mollitia repellendus,
 				repellat, quod perferendis.</p>
 		</div>
-		<div class="price-level">
-			<div class="price-icon">
+		<div class="price-level icon-feature">
+			<div class="icon">
 				<img src="img/sword.png" alt="Sword Icon">
 			</div>
 			<h3>Heroic Mode</h3>
@@ -111,50 +141,78 @@
 				repellat, quod perferendis.
 			</p>
 		</div>
+		<div class="price-level icon-feature">
+			<div class="icon">
+				<img src="img/sword.png" alt="Sword Icon">
+			</div>
+			<h3>Battle Royale</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vel id soluta ab sequi, tempore
+				exercitationem eos modi rem natus iusto officia molestiae fugiat possimus mollitia repellendus,
+				repellat, quod perferendis.
+			</p>
+		</div>
 		<a href="javascript:void(0);" class="black-button">More Events</a>
 	</section>
-	<section class="sponsors-overview">
-		<h1 class="heading">Sponsors & Partners</h1>
-		<div class="sponsors">
-			<a href="javascript:void(0);" class="sponsor-logo">
-				<img src="img/cougar-logo.png" alt="Cougar Gaming Logo">
-			</a>
-			<a href="javascript:void(0);" class="sponsor-logo">
-				<img src="img/tsg-logo.png" alt="Team Shenanigans Gaming Logo">
-			</a>
-			<a href="javascript:void(0);" class="sponsor-logo">
-				<img src="img/advanced-logo.png" alt="Advanced Gaming Logo">
-			</a>
-		</div>
-	</section>
 	<footer>
-		<div class="shop-info">
-			<img src="img/logo-wht.svg" alt="Shanigans Logo">
-		</div>
-		<div class="social-media">
-			<a href="javascript:void(0);">
-				<img src="img/Fortnite-10-HD.png" alt="Facebook Logo">
-			</a>
-			<a href="javascript:void(0);">
-				<img src="img/Fortnite-10-HD.png" alt="Twitter Logo">
-			</a>
-			<a href="javascript:void(0);">
-				<img src="img/Fortnite-10-HD.png" alt="Instagram Logo">
-			</a>
-			<a href="javascript:void(0);">
-				<img src="img/Fortnite-10-HD.png" alt="Twitch Logo">
-			</a>
-		</div>
-		<div class="shenanigans-gaming">
-			<img src="img/tsg-logo.png" alt="Shenanigans Official Logo">
-		</div>
-		<div class="footer-links">
-			<a href="javascript:void(0);">Home</a>
-			<a href="javascript:void(0);">About</a>
-			<a href="javascript:void(0);">Pricing</a>
-			<a href="javascript:void(0);">Events</a>
-			<a href="javascript:void(0);">Contact</a>
-		</div>
+		<section class="sponsors-overview">
+			<h1 class="heading">Sponsors & Partners</h1>
+			<div class="sponsors">
+				<a href="javascript:void(0);" class="sponsor-logo">
+					<img src="img/cougar-logo.svg" alt="Cougar Gaming Logo">
+				</a>
+				<a href="javascript:void(0);" class="sponsor-logo">
+					<img src="img/tsg-logo.png" alt="Team Shenanigans Gaming Logo">
+				</a>
+				<a href="javascript:void(0);" class="sponsor-logo">
+					<img src="img/advanced-logo.png" alt="Advanced Gaming Logo">
+				</a>
+			</div>
+		</section>
+		<section class="arena-info">
+			<div class="arena-contact">
+				<div class="arena-logo">
+					<img src="img/logo-wht.svg" alt="Shenanigans Logo">
+				</div>
+				<div class="social-media">
+					<a href="javascript:void(0);">
+						<img src="img/facebook.svg" alt="Facebook Logo">
+					</a>
+					<a href="javascript:void(0);">
+						<img src="img/twitter.svg" alt="Twitter Logo">
+					</a>
+					<a href="javascript:void(0);">
+						<img src="img/instagram.svg" alt="Instagram Logo">
+					</a>
+					<a href="javascript:void(0);">
+						<img src="img/twitch-logo.svg" alt="Twitch Logo">
+					</a>
+				</div>
+				<div class="arena-address">
+					<p>
+						5251 Timberhill Road Suite 104<br>
+						San Antonio, Texas 78238<br>
+						210-555-5555
+					</p>
+				</div>
+			</div>
+			<div class="shenanigans-gaming">
+				<img src="img/official-logo.png" alt="Shenanigans Official Logo">
+			</div>
+			<div class="arena-links">
+				<a href="javascript:void(0);">Home</a>
+				<a href="javascript:void(0);">About</a>
+				<a href="javascript:void(0);">Pricing</a>
+				<a href="javascript:void(0);">Events</a>
+				<a href="javascript:void(0);">Contact</a>
+			</div>
+			<div class="mobile-address">
+				<p>
+					5251 Timberhill Road Suite 104<br>
+					San Antonio, Texas 78238<br>
+					210-555-5555
+				</p>
+			</div>
+		</section>
 	</footer>
 	<script src="/js/main.js"></script>
 </body>

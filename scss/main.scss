@@ -3,4 +3,13 @@
 
 @import "base/reset";
 
+@import "components/buttons";
+@import "components/event";
+@import "components/hero-slider";
+@import "components/icon-feature";
+@import "components/snippet";
+
+@import "layout/footer";
 @import "layout/navigation";
+
+@import "pages/home";

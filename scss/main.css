@@ -5,13 +5,14 @@
 /* ARROWS */
 /* CHEVRONS */
 /* CLEARFIX MIXIN */
-.navigation::after {
+section::after, .navigation::after {
   content: " ";
   display: table;
   clear: both;
 }
 
 /** FONTS **/
+/** COLORS **/
 *,
 *:before,
 *:after {
@@ -36,6 +37,11 @@ body {
   font-size: 1.6rem;
 }
 
+section {
+  padding: 3rem 3rem;
+  text-align: center;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -47,15 +53,21 @@ h2,
 h3,
 h4,
 h5,
+a,
 p {
   margin: 0;
   padding: 0;
-  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
 }
 
 a {
-  text-decoration: none;
   display: block;
+  text-decoration: none;
 }
 
 ul {
@@ -64,9 +76,214 @@ ul {
   padding: 0;
 }
 
+.heading {
+  margin-bottom: 3rem;
+  font-family: "Exo 2", sans-serif;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.black-button {
+  width: 13rem;
+  height: 4.5rem;
+  background-color: black;
+  color: white;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.event {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.event:first-of-type .outer-bg .inner-bg {
+  background-image: url("../../img/the-gangs-all-here.jpeg");
+}
+
+.event:nth-of-type(2) .outer-bg .inner-bg {
+  background-image: url("../../img/overwatch.jpg");
+}
+
+.event:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+.event .outer-bg {
+  width: 110%;
+  height: 22rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: rotate(-5deg) translateX(-5%);
+          transform: rotate(-5deg) translateX(-5%);
+}
+
+.event .outer-bg .inner-bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: rotate(5deg) translate(-50%, 0);
+          transform: rotate(5deg) translate(-50%, 0);
+}
+
+.event .event-info,
+.event .description {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.event .event-info .date-box {
+  width: 6rem;
+  height: 6rem;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.event .event-info .date-box p {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.event .event-info .date-box p span {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+
+.event .event-info .info {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.event .description {
+  margin-top: 1rem;
+}
+
+.hero-slider {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../img/hero-image.JPG");
+}
+
+.hero-slider .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-feature .icon {
+  margin-bottom: 2rem;
+}
+
+.icon-feature .icon img {
+  width: auto;
+  height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-feature h3 {
+  margin-bottom: 0.6rem;
+  font-size: 2rem;
+}
+
+.snippet {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.snippet h1,
+.snippet p {
+  color: white;
+}
+
+.snippet .tagline {
+  margin-bottom: 2rem;
+  font-family: "Playball", sans-serif;
+  font-size: 2.8rem;
+  text-decoration: underline;
+}
+
+footer .sponsors-overview {
+  background-color: #333333;
+  color: white;
+}
+
+footer .sponsors-overview .sponsors a {
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .sponsors-overview .sponsors a:not(:first-of-type) {
+  margin-top: 5rem;
+}
+
+footer .arena-info {
+  background-color: black;
+  color: white;
+}
+
+footer .arena-info .arena-logo {
+  width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .arena-info .social-media {
+  max-width: 25rem;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .arena-info .social-media a img {
+  height: 100%;
+  width: auto;
+}
+
+footer .arena-info .arena-address {
+  display: none;
+}
+
+footer .shenanigans-gaming {
+  margin: 5rem auto;
+  width: 25rem;
+}
+
+footer .arena-links {
+  display: none;
+}
+
 .navigation {
   width: 100%;
-  height: 6rem;
+  height: 7rem;
   background-color: black;
   position: relative;
 }
@@ -82,8 +299,8 @@ ul {
 }
 
 .navigation .menu {
-  width: 3.2rem;
-  height: 2.7rem;
+  width: 2.8rem;
+  height: 2rem;
   position: absolute;
   top: 50%;
   right: 1.5rem;
@@ -98,7 +315,7 @@ ul {
 
 .navigation .menu.open span:first-of-type,
 .navigation .menu.open span:last-of-type {
-  top: 1.2rem;
+  top: 0.9rem;
   width: 0;
   left: 50%;
 }
@@ -116,7 +333,7 @@ ul {
 .navigation .menu span {
   display: block;
   position: absolute;
-  height: 0.3rem;
+  height: 0.2rem;
   width: 100%;
   background: white;
   opacity: 1;
@@ -132,14 +349,46 @@ ul {
 }
 
 .navigation .menu span:nth-of-type(2), .navigation .menu span:nth-of-type(3) {
-  top: 1.1rem;
+  top: 0.9rem;
 }
 
 .navigation .menu span:nth-of-type(4) {
-  top: 2.2rem;
+  top: 1.8rem;
 }
 
 .navigation .desktop-layout {
   display: none;
+}
+
+#homebody .black-button {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#homebody .upcoming-events {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#homebody .upcoming-events .event-separator {
+  width: calc(100% - 3rem);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#homebody .services-overview > p,
+#homebody .price-overview > p {
+  margin-bottom: 4rem;
+}
+
+#homebody .services-overview .icon-feature:not(:first-of-type),
+#homebody .price-overview .icon-feature:not(:first-of-type) {
+  margin-top: 5rem;
+}
+
+#homebody .services-overview {
+  background-color: black;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
